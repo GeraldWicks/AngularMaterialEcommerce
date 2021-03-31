@@ -1,0 +1,26 @@
+<div class="product_div">
+
+  <h1>Products</h1>
+
+  <div *ngFor="let product of products">
+    <h2> <a [routerLink]="['/products', product.id]" [title]="product.name + ' details'"> 
+      {{ product.name }} </a> 
+    </h2>
+
+    <!--
+    <p> {{product.description}} </p>
+    -->
+
+    <a [routerLink]="['/products', product.id]"><img src="{{ product.image }}" alt=""></a>
+    
+    <h3>$ {{ product.price }}</h3>
+
+    <button (click)="addToCart(product)" mat-raised-button color="accent">Add to Cart</button>
+
+  </div>
+
+  
+    
+</div>
+
+

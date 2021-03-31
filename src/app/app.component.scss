@@ -1,0 +1,99 @@
+$beauty_red : rgb(223, 94, 94);
+$nav_bar_color: #212121;
+
+button
+{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+mat-checkbox
+{
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+
+mat-radio-button
+{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left : 0.5rem;
+    margin-right: 0.5rem;
+
+}
+
+mat-select
+{
+    width: 8rem;;
+}
+
+mat-toolbar
+{
+    margin-bottom: 2rem;
+}
+
+footer
+{
+    margin-top: 10rem;
+    background-color: $nav_bar_color;
+    text-align:center;
+    height: 13rem;
+}
+
+.app_component_div
+{
+    text-align: center;
+}
+
+.s1
+{
+    width: 50%;
+
+    a
+    {
+        color: white;
+        text-decoration: none;
+
+        &:hover
+        {
+            font-weight: bold;
+        }
+    }
+    
+    
+}
+
+.s2
+{
+    width: 50%;
+    text-align: end;
+
+    color: white;
+    a
+    {
+        color: white;
+        text-decoration: none;
+
+        &:hover
+        {
+            font-weight: bold;
+        }
+    }
+}
+
+
+.news_mensage
+{
+    color: $beauty_red;
+}
+
+.insta
+{
+    color: white;
+    
+    &:hover
+    {
+        color: black;
+    }
+}

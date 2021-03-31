@@ -1,0 +1,48 @@
+<div class="product_div">
+
+    <h1>Shopping Cart</h1>
+
+    <table>
+
+
+        <td>
+
+            <tr>
+                <th><h3>Product Name</h3></th>
+            </tr>
+          <tr *ngFor="let item of items"><h3>{{ item }}</h3></tr>
+
+        </td>
+
+        <td>
+
+            <tr>
+                <th><h3>Price ($)</h3></th>
+            </tr>
+          <tr *ngFor="let price of prices"><h3>{{ price }}</h3></tr>
+
+        </td>
+    
+      </table>
+
+    <button (click)="totalCalculator()" mat-raised-button color="accent">Proceed to Checkout</button>
+    <div *ngIf="total > 0; else elseBlock">
+    <h2>Total = $ {{ total }}</h2>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" name="email" placeholder="Example@mail.com" value="" name="name" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" name="name" placeholder="Ex. Peter" value="" name="name" required>
+    </mat-form-field>
+
+    <a target="blank" href="https://www.paypal.com/"><button mat-raised-button color="accent">Pay</button></a>
+
+    </div>
+    <br>
+    <ng-template #elseBlock></ng-template>
+
+</div>
